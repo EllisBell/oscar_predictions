@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+ {% load staticfiles %}
+
 <html>
 
 <head>
@@ -7,10 +9,12 @@
 </head>
 
 <body>
+	<p>{{ testmessage }}</p>
 	<ul>
 		<li>stuff</li>
 		<li>more stuff</li>
 	</ul>
+	<img src="{% static "images/statue.jpg" %}" alt="a picture of Oscar" /> </br>
 	<a href="http://www.oscar.com"> read more </a>
 </body>
 
